@@ -15,7 +15,7 @@ const cardImages:ImgProject[] = [
     photo: 'card-project img-project-1',
     caption: 'Portfolio',
     description: 'Potfoli website using react',
-    website: '#'
+    website: 'https://github.com/krarikr/My-portfolio.git'
   },
   {
     id: 1,
