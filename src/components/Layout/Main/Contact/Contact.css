@@ -1,0 +1,81 @@
+div.contact-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.p-contact{
+    font-size: 3vmin;
+    margin-bottom: 1vh;
+  
+    color: #1C2833;
+    text-shadow: -1px 1px 2px rgb(116, 81, 81);
+    text-transform: uppercase;
+  
+  }
+
+  h1.h1-contact{
+    font-size: 7vmin;
+    margin-bottom: 1vh;
+  
+    background: linear-gradient(290deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+  
+    animation: AnimationContact;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+  }
+  
+  h2.h2-contact{
+    font-size: 4.5vmin;
+    margin-bottom: 5vh;
+    color: #1C2833;
+    
+  }
+
+  @keyframes AnimationContact {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }
+
+  
+  /* Start Responsive */
+
+
+/* ------ Start Tablet ------ */
+@media screen and (max-width:1024px) {
+
+  } 
+  /* ------ End Tablet ------ */
+  
+  
+  
+  
+  /* ------ Start Mobile ------ */
+  @media screen and (max-width:500px) {
+  
+  
+  } 
+  
+  
+  /* ------ End Mobile ------ */
+  
+  
+  /* ------ Start Mobile Rotate ------ */
+  @media (max-height:500px ) and (max-width:1000px ) {
+    div.contact-container{
+        height: 160vh;
+ 
+    }
+  
+  } 
+  
+  
+  /* ------ End Mobile Rotate ------ */
+  
+  /* ------ End Responsive ------*/

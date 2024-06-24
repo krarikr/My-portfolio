@@ -1,0 +1,154 @@
+
+div.skill-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+p.p-skill{
+    font-size: 3vmin;
+    margin-bottom: 1vh;
+
+    color: #1C2833;
+    text-shadow: -1px 1px 2px rgb(116, 81, 81);
+    
+    /* background: linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background-clip: text;
+    color: transparent;  */
+
+}
+
+h1.h1-skill{
+    font-size: 7vmin;
+    margin-bottom: 1vh;
+
+    background: linear-gradient(180deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+  
+    animation: AnimationSkill;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+}
+
+h2.h2-skill{
+    font-size: 4.5vmin;
+    margin-bottom: 5vh;
+    color: #1C2833;
+    
+}
+
+h3.h3-skill{
+    font-size: 3vmin;
+    margin-bottom: 2.5vh;
+    opacity: 0.8;
+    
+    background: linear-gradient(178deg, rgba(188, 12, 241,1), rgba(212, 4, 4,.8));
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+  
+    animation: AnimationSkill;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    
+}
+
+b.b-skill{
+
+  background: linear-gradient(178deg, rgba(188, 12, 241,1), rgba(212, 4, 4,.8));
+    background-clip: text;
+    color: transparent;
+    background-size: 400% 400%;
+  
+    animation: AnimationSkill;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+}
+
+div.icon-skill-1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1vh;
+}
+
+img.img-skill{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 1vh;
+}
+
+div.textWrap-skill{
+    display: flex;
+}
+
+div.wrap-icon-skill{
+    margin-right: 70px;
+}
+
+/* animation font color */
+@keyframes AnimationSkill {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+  }
+
+
+
+
+
+
+
+
+
+/* Start Responsive */
+
+
+/* ------ Start Tablet ------ */
+@media screen and (max-width:1024px) {
+
+  } 
+/* ------ End Tablet ------ */
+
+
+
+
+/* ------ Start Mobile ------ */
+  @media screen and (max-width:500px) {
+
+    img.img-skill{
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        margin-bottom: 1vh;
+    }
+
+  } 
+
+
+/* ------ End Mobile ------ */
+
+
+/* ------ Start Mobile Rotate ------ */
+@media (max-height:500px ) and (max-width:1000px ) {
+
+    img.img-skill{
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        margin-bottom: 1vh;
+    }
+
+  } 
+
+
+/* ------ End Mobile Rotate ------ */
+
+  /* ------ End Responsive ------*/

@@ -1,0 +1,266 @@
+
+div.project-container{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      /* align-items: end; */
+
+}
+
+div.wrapText-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+p.p-project{
+  font-size: 3vmin;
+  margin-bottom: 1vh;
+
+  color: #1C2833;
+  text-shadow: -1px 1px 2px rgb(116, 81, 81);
+  text-transform: uppercase;
+
+}
+
+h1.h1-project{
+  font-size: 7vmin;
+  margin-bottom: 1vh;
+
+  background: linear-gradient(290deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+  background-clip: text;
+  color: transparent;
+  background-size: 400% 400%;
+
+  animation: AnimationProject;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+h2.h2-project{
+  font-size: 4.5vmin;
+  margin-bottom: 5vh;
+  text-align: end;
+  color: #1C2833;
+  
+}
+
+/* Slide show Project */
+
+div.wrapCard-project{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+a.a-card-project{
+  text-decoration: none;
+}
+
+div.card-project{
+  width: 35vw;
+  height: 30vh;
+
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding: 10px 15px;
+
+}
+
+div.card-project:hover{
+  scale: 0.98;
+}
+
+div.card-project.img-project-1{
+  background-image: url(../../../../assets/img-project-1.svg);
+}
+
+div.card-project.img-project-2{
+  background-image: url(../../../../assets/img-project-2.png);
+}
+
+
+h3.card-h3-project{
+  color: azure;
+  font-size: 3vmin;
+}
+
+p.card-p-project{
+  color: azure;
+  font-size: 2vmin;
+}
+
+@keyframes AnimationProject {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+
+
+
+
+
+
+/* Start Responsive */
+
+
+/* ------ Start Tablet ------ */
+@media screen and (max-width:1024px) {
+  
+  div.wrapCard-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  div.card-project{
+    width: 55vw;
+    height: 25vh;
+    margin-bottom: 5vh;
+  }
+} 
+/* ------ End Tablet ------ */
+
+
+
+
+/* ------ Start Mobile ------ */
+@media screen and (max-width:500px) {
+
+  div.wrapCard-project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  div.card-project{
+    width: 60vw;
+    height: 20vh;
+    margin-bottom: 2vh;
+  }
+
+} 
+
+
+/* ------ End Mobile ------ */
+
+
+/* ------ Start Mobile Rotate ------ */
+@media (max-height:500px ) and (max-width:1000px ) {
+
+  div.wrapCard-project{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  div.card-project{
+    width: 35vw;
+    height: 40vh;
+    margin-bottom: 5vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
+  }
+
+} 
+
+
+/* ------ End Mobile Rotate ------ */
+
+/* ------ End Responsive ------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Responsive */
+
+
+/* ------ Start Tablet ------ */
+@media screen and (max-width:1024px) {
+
+} 
+/* ------ End Tablet ------ */
+
+
+
+
+/* ------ Start Mobile ------ */
+@media screen and (max-width:500px) {
+
+  img.img-skill{
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      margin-bottom: 1vh;
+  }
+
+} 
+
+
+/* ------ End Mobile ------ */
+
+
+/* ------ Start Mobile Rotate ------ */
+@media (max-height:500px ) and (max-width:1000px ) {
+
+  img.img-skill{
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+      margin-bottom: 1vh;
+  }
+
+} 
+
+
+/* ------ End Mobile Rotate ------ */
+
+/* ------ End Responsive ------*/

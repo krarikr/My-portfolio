@@ -1,0 +1,35 @@
+.footer-container{
+    width: 100vw;
+    height: 20vh;
+    padding: 5vh 15vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(290deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+    background-size: 400% 400%;
+  
+    animation: AnimationFooter;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+}
+
+h1.h1-footer{
+    font-size: 3vmin;
+    color: azure;
+    margin-bottom: 2vh;
+}
+
+p.p-footer{
+    font-size: 1.5vmin;
+    color: azure;
+}
+
+@keyframes AnimationFooter {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }

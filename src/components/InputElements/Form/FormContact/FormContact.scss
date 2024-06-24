@@ -1,0 +1,150 @@
+$black: #303030;
+$grey: #909090;
+
+div.formContact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.formContact-input {
+    width: clamp(120px, 50vw, 420px);
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border: 3px solid palevioletred;
+    border-radius: 10px;
+    margin: 0.625rem auto;
+    transition: all 250ms;
+
+
+    @media (min-width: 768px) {
+      width: clamp(120px, 35vw, 420px);
+    }
+    
+    
+        &:focus {
+        outline: none;
+        }
+        
+
+        &:focus + .formContact-label, &:not(:placeholder-shown) + .formContact-label {
+        transform: translateY(-4.50rem) scale(1);
+        background: linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+        background-clip: text;
+        color: transparent;
+        }
+
+        &::placeholder {
+            display: none;
+            color: transparent;
+        
+    
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+        }
+        
+}
+
+label.formContact-label {
+    font-size: 1rem;
+    color: $grey;
+    display: block;
+
+    transform: translate(1.25rem,-2.5rem);
+    transform-origin: 0 0;
+    transition: all 500ms;
+    
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    
+    pointer-events: none; 
+}
+
+textarea.formContact-textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid palevioletred;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    resize: none;
+    outline: none;
+    color: $black;
+
+  }
+
+label.formContact-label.textarea{
+    background: linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+    background-clip: text;
+    color: transparent;
+}
+
+div.btn-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.btn-submit-form{
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    width: 10vw;
+    height: 4vh;
+
+    font-size: 2.5vmin;
+    color: azure;
+
+    background: linear-gradient(290deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+    background-size: 400% 400%;
+  
+    animation: AnimationContact;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+
+      cursor: pointer;
+
+}
+
+button.btn-submit-form:active{
+    scale: 0.95;
+}
+
+@keyframes AnimationForm {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }
+
+
+@media (max-width: 1024px) {
+    button.btn-submit-form{
+        width: 20vw;
+        height: 3vh;
+        font-size: 2.2vmin;
+    }
+  }
+
+@media (max-width: 500px) {
+
+    button.btn-submit-form{
+       
+        width: 30vw;
+        height: 4vh;
+        font-size: 4vmin;
+    }
+  }
+
+  @media (max-height:500px ) and (max-width:1000px ) {
+    button.btn-submit-form{
+       
+        width: 20vw;
+        height: 6vh;
+        font-size: 4vmin;
+    }
+  
+  } 

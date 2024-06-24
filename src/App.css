@@ -1,0 +1,10 @@
+
+div.app{
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  /* height: 3000px; */
+  font-size: calc(60% * 0.8px);
+}
+

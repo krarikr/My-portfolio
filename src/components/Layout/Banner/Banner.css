@@ -1,0 +1,428 @@
+
+/* Start BG Banner */
+div.banner-container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(270deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+    background-size: 400% 400%;
+    box-shadow: 0 5px 4px 0px rgba(188, 12, 241,.3);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    animation: AnimationBanner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/* Animation Banner */
+
+@keyframes AnimationBanner {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* End BG Banner */
+
+/* Start info Banner */
+div.info-banner{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 8vh;
+    align-items: center;
+
+}
+
+/* ------- Start Profile-info Banner ------- */
+
+div.profile-banner{
+    display: flex;
+    flex-direction: column;
+}
+
+p.p-profile-banner{
+    color: azure;
+    font-size: 4vmin;
+    margin-bottom: 1vh;
+
+    /* border: 3px solid greenyellow; */
+}
+h1.h1-profile-banner{
+    color: azure;
+    font-size: 7vmin;
+    margin-bottom: 1vh;
+
+    /* border: 3px solid greenyellow; */
+}
+
+div.textswitch-profile-banner{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+
+    /* border: 3px solid greenyellow; */
+}
+ 
+p.p2-profile-banner{
+    color: azure;
+    font-size: 5vmin;
+    margin-right: 1rem;
+    text-transform: uppercase;
+
+}
+
+/* Start Text Switch */
+div.message-banner {
+
+    width: 20vw;
+    position: relative;
+  }
+
+div.word{
+    color: azure;
+    font-size: 5vmin;
+    margin-right: 2vw;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: switch 7s infinite ease-in-out;
+    min-width: 100%;
+}
+
+.word:nth-child(1) {
+    animation-delay: -6s;
+}
+ 
+.word:nth-child(2) {
+    animation-delay: -5s;
+}
+ 
+.word:nth-child(3) {
+    animation-delay: -4s;
+}
+
+.word:nth-child(4) {
+    animation-delay: -2s;
+}
+
+ 
+@keyframes switch {
+ 
+    0%,
+    5%,
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+ 
+    50%,
+    80% {
+        filter: blur(180px);
+        opacity: 0;
+    }
+}
+/* End Text Switch */
+
+/* Start Icon Socail */
+div.social-profile-banner{
+    display: flex;
+    margin-bottom: 3vh;
+
+    /* border: 3px solid greenyellow; */
+}
+
+div.social{
+    margin-right: 40px;
+}
+
+img.img-social{
+    width: 30px;
+    height: 30px; 
+}
+
+img.img-social:hover{
+    scale: 1.4;
+}
+/* End Icon Socail */
+
+/* Start btn-info-banner */
+div.btn-profile-banner{
+    display: flex;
+    flex-direction: row;
+
+    /* border: 3px solid greenyellow; */
+}
+
+button.btn-banner{
+    width: 200px;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 0px 10px 3px rgba(188, 12, 241,.4);
+}
+
+button.btn-banner:active{
+    scale: 0.95;
+}
+
+a.a-btn-banner{
+    text-decoration: none;
+
+    font-size: 3vmin;
+    font-weight: bold;
+    padding: 5px;
+
+    background: linear-gradient(270deg, rgba(188, 12, 241,1), rgba(212, 4, 4,.8));
+    background-size: 400% 400%;
+    background-clip: text;
+    color: transparent;
+
+    animation: AnimationBanner;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/* End btn-info-banner */
+
+/* ------- End Profile-info Banner --------*/
+
+
+
+/* ------- Start Img info Banner ------- */
+
+div.img-profile-banner{
+    display: flex;
+    justify-content: center;
+}
+img.img-banner{
+    margin: 2rem 0;
+    width: 400px;
+    height: 40vh;
+
+}
+
+/* ------- End Img info Banner ------- */
+
+/* End info Banner */
+
+
+
+
+
+
+
+/* Start Responsive */
+
+
+/* ------ Start Tablet ------ */
+@media screen and (max-width:1024px) {
+    div.banner-container{
+        justify-content: center;
+    }
+    div.info-banner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* Profile info Banner */
+    p.p-profile-banner{
+        text-align: center;
+    }
+    h1.h1-profile-banner{
+        text-align: center;
+    }
+
+    div.textswitch-profile-banner{
+        text-align: center;
+        justify-content: center;
+    }
+
+    p.p2-profile-banner{
+        margin-right: 1vw;
+    }
+    /* Text Switch */
+    div.message-banner {
+        width: 30vw;
+      }
+
+    /* Icon Socail */
+    div.social-profile-banner{
+        display: flex;
+        justify-content: center;
+    }
+    
+    div.social{
+        margin: 0PX 5VW;
+    }
+    
+    /* btn Let's talk */
+    div.btn-profile-banner{
+        justify-content: center;
+    }
+
+    button.btn-banner{
+        width: 50vw;
+    }
+
+    a.a-btn-banner{
+        font-size: 5vmin;
+    }
+
+    /* Img info Banner */
+
+    img.img-banner{
+        width: 45vw;
+        height: 40vh;
+    }
+  } 
+/* ------ End Tablet ------ */
+
+
+
+
+/* ------ Start Mobile ------ */
+  @media screen and (max-width:500px) {
+    div.banner-container{
+        justify-content: center;
+    }
+    div.info-banner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* Profile info Banner */
+    p.p-profile-banner{
+        text-align: center;
+    }
+    h1.h1-profile-banner{
+        text-align: center;
+    }
+
+    div.textswitch-profile-banner{
+        text-align: center;
+        justify-content: center;
+    }
+
+    p.p2-profile-banner{
+        margin-right: 1vw;
+    }
+
+    /* Icon Socail */
+    div.social-profile-banner{
+        justify-content: center;
+    } 
+    div.social{
+        margin: 0PX 4VW;
+    }
+
+    /* Text Switch */
+    div.message-banner {
+        width: 30vw;
+      }
+
+    /* btn Let's talk */
+    div.btn-profile-banner{
+        justify-content: center;
+    }
+
+    button.btn-banner{
+        width: 50vw;
+    }
+
+    a.a-btn-banner{
+        font-size: 5vmin;
+    }
+
+    /* Img info Banner */
+
+    img.img-banner{
+        width: 60vw;
+        height: 30vh;
+    }
+  } 
+
+
+/* ------ End Mobile ------ */
+
+
+/* ------ Start Mobile Rotate ------ */
+@media (max-height:500px ) and (max-width:1000px ) {
+    div.banner-container{
+        height: 500px;
+        justify-content: center;
+    }
+    div.info-banner{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /* Profile info Banner */
+    p.p-profile-banner{
+        text-align: center;
+    }
+    h1.h1-profile-banner{
+        text-align: center;
+    }
+
+    div.textswitch-profile-banner{
+        text-align: center;
+        justify-content: center;
+    }
+
+    p.p2-profile-banner{
+        margin-right: 1vw;
+    }
+
+    /* Icon Socail */
+    div.social-profile-banner{
+        justify-content: center;
+    } 
+
+    div.social{
+        margin: 0PX 2VW;
+    }
+
+    img.img-social{
+        width: 25px;
+        height: 25px; 
+    }
+    /* Text Switch */
+    div.message-banner {
+        width: 12vw;
+      }
+
+    /* btn Let's talk */
+    div.btn-profile-banner{
+        justify-content: center;
+    }
+
+    button.btn-banner{
+        width: 30vw;
+        height: 8vh;
+    }
+
+    a.a-btn-banner{
+        font-size: 5vmin;
+    }
+
+    /* Img info Banner */
+
+    img.img-banner{
+        width: 18vw;
+        height: 30vh;
+    }
+  } 
+
+
+/* ------ End Mobile Rotate ------ */
+
+  /* ------ End Responsive ------*/

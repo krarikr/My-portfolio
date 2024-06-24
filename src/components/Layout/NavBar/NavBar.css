@@ -1,0 +1,119 @@
+div.navBar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+
+  height: auto;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,0.3);
+  border-radius: 0px 0px 50px 50px;
+  background-color: azure;
+}
+
+/* Start Logo Nav */
+div.logo-nav{
+  font-size: 4vmin;
+  background: linear-gradient(240deg, rgba(212, 4, 4,.8), rgba(188, 12, 241,1));
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  background-size: 400% 400%;
+
+  animation: AnimationNav;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+/* End Logo Nav */
+
+/* Start Menu Nav */
+ul.ul-nav{
+  display: flex;
+  list-style: none;
+}
+
+li.li-nav{
+  margin-left: 2rem;
+}
+
+a.a-nav{
+  font-size: 3vmin;
+  text-decoration: none;
+  background: linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  background-clip: text;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+/* End Menu Nav */
+
+/* Start Animation Hover */
+ul.ul-nav li.li-nav a.a-nav,
+ul.ul-nav li.li-nav a.a-nav:after,
+ul.ul-nav li.li-nav a.a-nav:before {
+  transition: all .5s;
+}
+
+ul.ul-nav li.li-nav a.a-nav{
+    position: relative;
+}
+
+ul.ul-nav li.li-nav a.a-nav:after{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  background: linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+  height: 1px;
+}
+ul.ul-nav li.li-nav a.a-nav:hover:after {
+  width: 100%;
+}
+
+/* End Animation Hover */
+
+@keyframes AnimationNav {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@media screen and (max-width:500px) {
+  /* ul.ul-nav{
+    display: none;
+  }
+  div.navBar-container{
+    justify-content: center;
+  } */
+
+  div.navBar-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.logo-nav{
+   margin-bottom: 1.5vh;
+  }
+} 
+
+@media (max-height:500px) and (max-width:1000px) {
+  div.logo-nav{
+    font-size: 6vmin;
+  }
+  a.a-nav{
+    font-size: 5vmin;
+
+  }
+} 
